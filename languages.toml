@@ -2260,18 +2260,6 @@ name = "vala"
 source = { git = "https://github.com/vala-lang/tree-sitter-vala", rev = "c9eea93ba2ec4ec1485392db11945819779745b3" }
 
 [[language]]
-name = "hare"
-scope = "source.hare"
-injection-regex = "hare"
-file-types = ["ha"]
-comment-token = "//"
-indent = { tab-width = 8, unit = "\t" }
-
-[[grammar]]
-name = "hare"
-source = { git = "https://git.sr.ht/~ecs/tree-sitter-hare", rev = "07035a248943575444aa0b893ffe306e1444c0ab" }
-
-[[language]]
 name = "devicetree"
 scope = "source.devicetree"
 injection-regex = "(dtsi?|devicetree|fdt)"
@@ -3334,20 +3322,6 @@ formatter = { command = "gn", args = ["format", "--stdin"] }
 [[grammar]]
 name = "gn"
 source = { git = "https://github.com/willcassella/tree-sitter-gn", rev = "e18d6e36a79b20dafb58f19d407bd38b0e60260e" }
-
-[[language]]
-name = "blueprint"
-scope = "source.blueprint"
-injection-regex = "blueprint"
-file-types = ["blp"]
-comment-token = "//"
-block-comment-tokens = { start = "/*", end = "*/" }
-language-servers = [ "blueprint-compiler" ]
-indent = { tab-width = 4, unit = "    " }
-
-[[grammar]]
-name = "blueprint"
-source = { git = "https://gitlab.com/gabmus/tree-sitter-blueprint", rev = "863cea9f83ad5637300478e0559262f1e791684b" }
 
 [[language]]
 name = "forth"
