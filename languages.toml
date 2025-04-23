@@ -1561,19 +1561,6 @@ name = "zig"
 source = { git = "https://github.com/tree-sitter-grammars/tree-sitter-zig", rev = "eb7d58c2dc4fbeea4745019dee8df013034ae66b" }
 
 [[language]]
-name = "prolog"
-scope = "source.prolog"
-file-types = ["pl", "prolog"]
-shebangs = ["swipl"]
-comment-token = "%"
-block-comment-tokens = { start = "/*", end = "*/" }
-language-servers = [ "swipl" ]
-
-[[grammar]]
-name = "prolog"
-source = { git = "https://codeberg.org/foxy/tree-sitter-prolog", subpath = "grammars/prolog", rev = "d8d415f6a1cf80ca138524bcc395810b176d40fa" }
-
-[[language]]
 name = "tsq"
 scope = "source.tsq"
 file-types = [{ glob = "queries/*.scm" }, { glob = "injections.scm" },  { glob = "highlights.scm" },  { glob = "indents.scm" },  { glob = "textobjects.scm" },  { glob = "locals.scm" },  { glob = "tags.scm" }]
